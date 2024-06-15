@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ID=$(id)
+echo "Logged in ID is $ID"
 if [ $ID -ne 0 ]
 then
 echo "Not a root user, login with root user to continue"
