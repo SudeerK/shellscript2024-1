@@ -28,3 +28,5 @@ VALIDATE "MYSQL"
 
 yum install git123 -y
 VALIDATE "GIT"
+
+echo $0 #ScriptName
