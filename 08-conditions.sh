@@ -10,7 +10,7 @@ echo " entered value $Number is less than 100"
 fi
 comment
 
-if [ Number gt 50 ]
+if [ $Number gt 50 ]
 echo "$Number is greater than 50"
 else
 echo "$Number is less than 50"
