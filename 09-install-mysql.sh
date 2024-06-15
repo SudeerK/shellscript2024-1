@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id)
+ID=$(id -u)
 echo "Logged in ID is $ID"
 if [ $ID -ne 0 ]
 then
