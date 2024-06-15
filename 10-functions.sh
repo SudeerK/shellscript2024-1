@@ -12,4 +12,11 @@ echo "Installation of software is success"
 fi
 }
 
-yum install mysql -y
+yum install mysql123 -y
+
+if [ $? -ne 0 ]
+then 
+echo "ERROR::INSTALLATION FAILED"
+else
+echo "INSTALLATION SUCCESSFUL"
+fi
