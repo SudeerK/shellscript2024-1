@@ -2,4 +2,4 @@
 
 fruits=("Apple","Guava","Pineapple") 
 
-echo "First Value is $fruits"
+echo "First Value is $(fruits[0])"
