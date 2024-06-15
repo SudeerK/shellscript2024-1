@@ -25,7 +25,7 @@ yum install mysql123 -y
 if [ $? -ne 0 ]
 then 
 echo "ERROR:: Installation failed"
-exit 5
+# exit 5
 else 
 echo " Installation Success"
 fi
