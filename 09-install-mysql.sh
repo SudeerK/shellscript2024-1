@@ -20,6 +20,7 @@ echo " You are a Root user"
 fi #reverse of if indicating end.
 
 yum install mysql123 -y 
+echo "Value of ? is $?"
 
 if [ $? ne 0 ]
 then 
