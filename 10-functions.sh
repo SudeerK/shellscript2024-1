@@ -7,7 +7,7 @@ VALIDATE()
 {
     if [ $? -ne 0 ]
     then 
-        echo "ERROR::INSTALLATION FAILED"
+        echo "ERROR:: $1 INSTALLATION FAILED"
         exit 1
     else
         echo "INSTALLATION SUCCESSFUL"
@@ -24,7 +24,7 @@ echo "SUCCESS:: ROOT USER"
 fi
 
 yum install mysql -y
-VALIDATE
+VALIDATE "MYSQL"
 
 yum install git123 -y
-VALIDATE
+VALIDATE "GIT"
