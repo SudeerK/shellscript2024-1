@@ -1,7 +1,8 @@
 #!/bin/bash
-Num1=$1
-Num2=$2
 
-SUM=$(($Num1+$Num2)) #why is it required to give this in multiple braces?
+NUM1=$1
+NUM2=$2
 
-echo "Total sum is : $SUM"
+SUM=($NUM1+$NUM2)
+
+echo "Total sum of $NUM1 and $NUM2 is $SUM"
