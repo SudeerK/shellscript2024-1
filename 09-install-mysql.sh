@@ -38,5 +38,3 @@ echo "ERROR:: Installing GIT"
 else
 echo "GIT Installation Successful"
 fi
-
-yum install abcd -y
