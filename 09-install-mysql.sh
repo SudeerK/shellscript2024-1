@@ -22,7 +22,7 @@ fi #reverse of if indicating end.
 
 yum install mysql123 -y 
 
-if [ $? -ne 0 ]
+if [ $? -ne 1 ]
 then 
 echo "ERROR:: Installation failed"
 # exit 5
