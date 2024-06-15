@@ -11,6 +11,7 @@ fi
 comment
 
 ID=$(id -u)
+echo "Value of ID is $ID"
 if [ $ID -ne 0 ]
 then
 echo "Error:: Please run this script with root user."
@@ -20,6 +21,7 @@ echo " You are a Root user"
 fi #reverse of if indicating end.
 
 yum install mysql123 -y 
+
 echo "Value of ? is $?"
 
 if [ $? ne 0 ]
