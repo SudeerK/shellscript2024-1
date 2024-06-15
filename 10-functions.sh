@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Script Name : $0" #ScriptName will be retrieved.
+
 ID=$(id -u)
 echo "Value of ID = $ID"
 
@@ -29,4 +31,3 @@ VALIDATE "MYSQL"
 yum install git123 -y
 VALIDATE "GIT"
 
-echo $0 #ScriptName
