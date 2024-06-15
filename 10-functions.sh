@@ -11,3 +11,5 @@ else
 echo "Installation of software is success"
 fi
 }
+
+yum install mysql -y
