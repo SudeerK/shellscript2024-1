@@ -17,3 +17,5 @@ echo "Error:: Please run this script with root user."
 else
 echo " You are a Root user"
 fi #reverse of if indicating end.
+
+yum install mysql -y
