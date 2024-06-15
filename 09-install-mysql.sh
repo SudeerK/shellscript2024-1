@@ -20,7 +20,7 @@ else
 echo " You are a Root user"
 fi #reverse of if indicating end.
 
-yum install mysql123 -y 
+yum install mysql -y 
 
 if [ $? -ne 0 ]
 then 
@@ -28,4 +28,13 @@ echo "ERROR:: Installation failed"
 exit 1
 else 
 echo " Installation Success"
+fi
+
+yum install git123 -y
+
+if [ $? -ne 0 ]
+then
+echo "ERROR:: Installing GIT"
+else
+echo "GIT Installation Successful"
 fi
