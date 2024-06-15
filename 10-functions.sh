@@ -8,7 +8,7 @@ VALIDATE()
     if [ $? -ne 0 ]
     then 
         echo "ERROR:: $1 INSTALLATION FAILED"
-        exit 1
+
     else
         echo "$1 INSTALLATION SUCCESSFUL"
     fi
