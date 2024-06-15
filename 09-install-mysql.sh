@@ -11,7 +11,7 @@ fi
 comment
 
 ID=$(id -u)
-# echo "Value of ID is $ID"
+echo "Value of ID is $ID"
 if [ $ID -ne 0 ]
 then
 echo "Error:: Please run this script with root user."
@@ -24,10 +24,10 @@ yum install mysql123 -y
 
 echo "Value of ? is $?"
 
-if [ $? ne 0 ]
+if [ $? -ne 0 ]
 then 
 echo "ERROR:: Installation failed"
-exit 5
+# exit 5
 else 
 echo " Installation Success"
 fi
