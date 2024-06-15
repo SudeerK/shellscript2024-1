@@ -23,7 +23,7 @@ else
 echo "SUCCESS:: ROOT USER"
 fi
 
-yum install mysql -y
+yum install mysql123 -y
 VALIDATE "MYSQL"
 
 yum install git123 -y
