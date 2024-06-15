@@ -13,7 +13,7 @@ fi
 }
 
 yum install mysql123 -y
-
+VALIDATE()
 if [ $? -ne 0 ]
 then 
 echo "ERROR::INSTALLATION FAILED"
