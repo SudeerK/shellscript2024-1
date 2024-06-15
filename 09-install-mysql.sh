@@ -11,7 +11,7 @@ fi
 comment
 
 ID=$(id -u)
-#echo "Value of ID is $ID"
+# echo "Value of ID is $ID"
 if [ $ID -ne 0 ]
 then
 echo "Error:: Please run this script with root user."
