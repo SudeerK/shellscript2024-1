@@ -20,7 +20,7 @@ else
 echo " You are a Root user"
 fi #reverse of if indicating end.
 
-yum install mysql123 -y 
+yum install mysql -y 
 
 if [ $? -ne 0 ]
 then 
