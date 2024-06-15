@@ -5,13 +5,13 @@ echo "Value of ID = $ID"
 
 VALIDATE()
 {
-if [ $? -ne 0 ]
-then 
-echo "ERROR::INSTALLATION FAILED"
-exit 1
-else
-echo "INSTALLATION SUCCESSFUL"
-fi
+    if [ $? -ne 0 ]
+    then 
+        echo "ERROR::INSTALLATION FAILED"
+        exit 1
+    else
+        echo "INSTALLATION SUCCESSFUL"
+    fi
 }
 
 
@@ -24,4 +24,4 @@ echo "SUCCESS:: ROOT USER"
 fi
 
 yum install mysql123 -y
-VALIDATE()
+VALIDATE
