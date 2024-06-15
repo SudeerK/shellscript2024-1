@@ -10,7 +10,7 @@ VALIDATE()
         echo "ERROR:: $1 INSTALLATION FAILED"
         exit 1
     else
-        echo "INSTALLATION SUCCESSFUL"
+        echo "$1 INSTALLATION SUCCESSFUL"
     fi
 }
 
