@@ -9,4 +9,5 @@ then
 echo "ERROR:: NOT A ROOT USER. LOGIN WITH ROOT USER TO INSTALL SOFTWARE"
 else
 echo "Installation of software is success"
+fi
 }
