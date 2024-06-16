@@ -29,6 +29,6 @@ else
 echo "SUCCESS:: ROOT USER"
 fi
 
-yum install mysql -y
-VALIDATE "MYSQL" &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE
+VALIDATE "MYSQL"
 
