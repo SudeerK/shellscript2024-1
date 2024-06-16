@@ -13,10 +13,10 @@ VALIDATE()
 {
     if [ $? -ne 0 ]
     then 
-        echo "ERROR:: $1 \e[31m INSTALLATION FAILED"
+        echo -e "ERROR:: $1 \e[31m INSTALLATION FAILED"
 
     else
-        echo "$1 \e[32m INSTALLATION SUCCESSFUL"
+        echo -e "$1 \e[32m INSTALLATION SUCCESSFUL"
     fi
 }
 
