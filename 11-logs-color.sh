@@ -18,7 +18,7 @@ VALIDATE()
 {
     if [ $? -ne 0 ]
     then 
-        echo -e "ERROR:: $1 \e[31m INSTALLATION FAILED"
+        echo -e "ERROR:: $1 $Y INSTALLATION FAILED"
 
     else
         echo -e "$1 $G INSTALLATION SUCCESSFUL"
