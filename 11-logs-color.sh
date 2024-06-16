@@ -9,6 +9,11 @@ echo "Logged Time is : $TimeStamp"
 
 LOGFILE="/tmp/$0-$TimeStamp.log"
 
+R=\e[31m #Red
+G=\e[32m #Green
+Y=\e[33m #Yellow
+N=\e[0m  #Normal color
+
 VALIDATE()
 {
     if [ $? -ne 0 ]
@@ -16,7 +21,7 @@ VALIDATE()
         echo -e "ERROR:: $1 \e[31m INSTALLATION FAILED"
 
     else
-        echo -e "$1 \e[32m INSTALLATION SUCCESSFUL"
+        echo -e "$1 $G INSTALLATION SUCCESSFUL"
     fi
 }
 
