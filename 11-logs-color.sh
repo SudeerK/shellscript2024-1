@@ -9,10 +9,10 @@ echo "Logged Time is : $TimeStamp"
 
 LOGFILE="/tmp/$0-$TimeStamp.log"
 
-R=\e[31m #Red
-G=\e[32m #Green
-Y=\e[33m #Yellow
-N=\e[0m  #Normal color
+R="\e[31m" #Red
+G="\e[32m" #Green
+Y="\e[33m" #Yellow
+N="\e[0m"  #Normal color
 
 VALIDATE()
 {
