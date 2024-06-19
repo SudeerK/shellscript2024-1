@@ -32,7 +32,7 @@ then
 echo -e "$R Error:: Not a root user $N"
 exit 1
 else 
-echo "$G Logged in as root user"
+echo -e "$G Logged in as root user"
 fi
 
 for package in $@
