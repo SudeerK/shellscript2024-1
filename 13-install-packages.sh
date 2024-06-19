@@ -13,7 +13,19 @@ Y="\e[33m" #Yellow
 N="\e[0m"  #Normal color
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-echo "Script started executing at: $TIMESTAMP"
+LOGFILE="tmp/$0-$TIMESTAMP.log"
+
+echo "Script started executing at: $TIMESTAMP" &>> $LOGFILE
+
+VALIDATE()
+{
+    if [ $1 -ne 0]
+    then
+    echo " $2 ... FAILED"
+    else
+    echo "$2 ... PASSED"
+}
+
 if [ $ID -ne 0 ]
 then 
 echo -e "$R Error:: Not a root user $N"
@@ -24,11 +36,12 @@ fi
 
 for package in $@
 do
-yum list installed $package
+yum list installed $package &>> $LOGFILE
 if [ $? -ne 0 ]
 then 
-yum install $package -y
+yum install $package -y &>> $LOGFILE
+VALIDATE $? "Installation of $package"
 else
-echo -e "Package already installed.. Skipping"
+echo -e "$package already installed.. Skipping"
 fi
 done
