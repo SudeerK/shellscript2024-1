@@ -13,7 +13,7 @@ Y="\e[33m" #Yellow
 N="\e[0m"  #Normal color
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="tmp/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "Script started executing at: $TIMESTAMP" &>> $LOGFILE
 
