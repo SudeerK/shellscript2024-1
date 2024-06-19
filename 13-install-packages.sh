@@ -10,7 +10,7 @@ N="\e[0m"  #Normal color
 
 if [ $ID -ne 0 ]
 then 
-echo -e "$R Error:: Not a root user $N"
+echo -e "$RError:: Not a root user $N"
 fi
 
 
