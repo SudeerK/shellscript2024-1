@@ -15,7 +15,7 @@ N="\e[0m"  #Normal color
 if [ $ID -ne 0 ]
 then 
 echo -e "$R Error:: Not a root user $N"
-exit 1
+#exit 1
 else 
 echo "Logged in as root user"
 fi
