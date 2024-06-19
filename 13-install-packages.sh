@@ -24,6 +24,7 @@ VALIDATE()
     echo " $2 ... FAILED"
     else
     echo "$2 ... PASSED"
+    fi
 }
 
 if [ $ID -ne 0 ]
