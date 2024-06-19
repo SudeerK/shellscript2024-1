@@ -28,4 +28,5 @@ then
 yum install $package -y
 else
 echo -e "Package already installed.. Skipping"
+fi
 done
