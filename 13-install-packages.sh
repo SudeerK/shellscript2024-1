@@ -21,9 +21,9 @@ VALIDATE()
 {
     if [ $1 -ne 0 ]
     then
-    echo " $2 ... FAILED"
+    echo "$R $2 ... FAILED"
     else
-    echo "$2 ... PASSED"
+    echo "$G $2 ... PASSED"
     fi
 }
 
@@ -32,7 +32,7 @@ then
 echo -e "$R Error:: Not a root user $N"
 exit 1
 else 
-echo "Logged in as root user"
+echo "$G Logged in as root user"
 fi
 
 for package in $@
@@ -43,6 +43,6 @@ then
 yum install $package -y &>> $LOGFILE
 VALIDATE $? "Installation of $package"
 else
-echo -e "$package already installed.. Skipping"
+echo -e "$package already installed.. $Y Skipping $N"
 fi
 done
