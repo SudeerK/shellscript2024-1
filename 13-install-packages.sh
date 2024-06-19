@@ -12,6 +12,8 @@ G="\e[32m" #Green
 Y="\e[33m" #Yellow
 N="\e[0m"  #Normal color
 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+echo "Script started executing at: $TIMESTAMP"
 if [ $ID -ne 0 ]
 then 
 echo -e "$R Error:: Not a root user $N"
