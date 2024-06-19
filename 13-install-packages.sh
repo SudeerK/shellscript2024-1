@@ -15,12 +15,17 @@ N="\e[0m"  #Normal color
 if [ $ID -ne 0 ]
 then 
 echo -e "$R Error:: Not a root user $N"
-#exit 1
+exit 1
 else 
 echo "Logged in as root user"
 fi
 
-for i in {1..10}
+for package in $@
 do
-echo " $i "
+yum list installed $package
+if [ $? -ne 0 ]
+then 
+yum install $package -y
+else
+echo -e "Package already installed.. Skipping"
 done
